@@ -69,5 +69,52 @@ private byte choix=0;
 		    System.out.println("|           Au revoir et à bientot           |");
 		    System.out.println("=============================================");
 		    System.exit(0);
-}
+		}
+
+		public byte menuOperation () {
+			System.out.println("=============================================");
+		    System.out.println("|             MENU OPERATION                |");
+		    System.out.println("=============================================");
+		    System.out.println("| Options:                                  |");
+		    System.out.println("|        0. Selectionner compte courant     |");
+		    System.out.println("|        1. Retrait : pour retirer une somme|");
+		    System.out.println("|                     sur le compte.        |");
+		    System.out.println("|        2. Dépôt : pour déposer une somme  |");
+		    System.out.println("|                   sur le compte.          |");
+		    System.out.println("|        3. Solde : qui retourne le solde   |");
+		    System.out.println("|                   du compte               |");
+		    System.out.println("|        4. Quitter : Revenir au menu       |");
+		    System.out.println("|                     principale            |");
+		    System.out.println("=============================================");
+			choix = clavier.nextByte();
+			return choix;
+		}
+		public byte menuMotifAchat (){
+			System.out.println("=============================================");
+		    System.out.println("|             MENU MOTIF ACHAT              |");
+		    System.out.println("=============================================");
+		    System.out.println("| Options:                                  |");
+		    System.out.println("|        1. Salaire                         |");
+		    System.out.println("|        2. Loyer                           |");
+		    System.out.println("|        3. Alimentation                    |");
+		    System.out.println("|        4. Divers                          |");
+		    System.out.println("|        5. Sortir                          |");
+		    System.out.println("=============================================");
+			choix = clavier.nextByte();
+		    return choix;
+		}
+		public byte menuModePaiement (){
+			System.out.println("=============================================");
+		    System.out.println("|             MENU MODE PAIEMENT            |");
+		    System.out.println("=============================================");
+		    System.out.println("| Options:                                  |");
+		    System.out.println("|        1. Carte Bancaire                  |");
+		    System.out.println("|        2. Chèque                          |");
+		    System.out.println("|        3. Virement                        |");
+		    System.out.println("|        4. Sortir                          |");
+		    System.out.println("=============================================");
+			choix = clavier.nextByte();
+			return choix;
+		}
+		
 }
