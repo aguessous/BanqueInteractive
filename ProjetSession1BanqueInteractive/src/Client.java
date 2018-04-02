@@ -4,7 +4,7 @@ Application : Banque Intractive
 Session 1: Hiver 2018
 Groupe : APOO , Gr: 00233
 */
-package version2;
+
 
 import java.util.Scanner;
 public class Client {
